@@ -1,0 +1,671 @@
+<Customization level="0" description="Version x">
+    <Page path="~/pages/cr/cr101000.aspx" ControlId="16" pageSource="7Vtbb9s4Fn52gf4HQovOW6Mkne4WiVNsaidtsHZjxJ4mbwtaYmxuZVFDUqk9D/vb95Ci7lfLLWY7iB9ahzo89/MdXuThq3+iGV4RNMH+KoQvF9bobxaaYiEJVw+uqQdj/7XTEWEv8PILJd+ONnrMQpehZFdPxJf3lJMwuLAkD4n18sXgC/aoiyW5I7+HRMgL6xF7glhoxFzDeHR3cnxyfHx8hEWwPXKEhW78NeFUigtLCft3TKDYLahUc37zpfriasUt9Or9yxcvXwzBkEjHxS4g6AvlMsTeDMt1m/Zq/hDEn42YL8EIdDO+sBz4fqIU1UMzDzvkE/NcwtXDYD2eW4iHPgaT5oQ/ARtgMhgG27PZwxhLPGchd4jm5IqEVESk6J66Si0w65WFZpxuMN8plZQ75kSGwR1xGHeVyQNlzWe8AbNnD0e3y/8QR4qj0d2RoZxi6ksLzBV0qXyzUJ5XugyGI+x5S+x8HbHNBvuu0KOxjvPCU6T+p3K0hjQgwvBBkeA5fiKRK0BY5AGJlxayIzl2laChXfCFcrKd8XKd09/UO/263ucQU5To1eTtT4Su1vDw77++CbYWSvWLQ6VGpmSzJLwqGhOG3Vt/TJSdsZOuNph61F995DgAOcb7l46kT1Tu0CcQ6CmhI+YxYGqhOfEgisRNBoyGqXbW+6EdM4jY3UiyyUUQLFZjaEG2MOEjgcBgD1hLCaqISAmgXZBN4EEFmr/N5AnesVDehR4pOmsuMVeahhs/tm+Cl8QTRsdpFB7OvDn9A3LjYRrnQQfmHzkLgxEOJGXA/XOovAzagtYAD75DjHhNFksvMI98x7iONnFvg4BBofvgp4TdzbiUAiqo15R4ELOaGUbI4NLz2Lcrl8pu8kdYkI6Ci6Q9JQKSCSh6r6PUKvLetm4CTFd+Z3vL5A2SB71yaOSBfUTsnzhj8ohDT04IdjWPZluqqPf0nmGhUdSR3WUWJ/QUGwrJNoTvIbcwo3PoqhXIlF13HSom9czd2CiowT1ckKGukxtLHQw/curOOAsIl5SIZHwwjHIZRaAqpsQPL6zraB1kp9Pt6vmmj8bm9EPaSyGgEDeqzU5xsH+xqLw3PklZAadmLzbMiq1WzctQq6VGObsPci800ejhYV4uwmBUkPv7o3niT+WS+sSbEr4ibVkVLR22GytfnR8uHYeF/j4+bZn5F3Fq5wXWId7PgG1LAGIrGwG7xKM1Bt3N7Iz1+2dS1azOWZQq1gumzSK+Az7PsE88ba75flIy7Y74sHGaU1j+JxlhxuRODUWPMpnfomvjNmA+rdo62O8RqmUfaZ8OnJZMsAu6jdbE+fqBbfVUb+nN1+B9tfm6DOWa8fI+OxNeRRuRXTOugqwnWqYYplajLGcNe9tg95lJUhaiKUmyG8wBfjJnHzHqYGRfMWZOKmbQ2e8nxw2O786lnIHVYNRYs3ewU1UHHhWlWqq1cu1mZ0eeEJCWIkr3DeYr6r/maoN9hk6Pg+25lUH3OtjvuHyrRfw6yK+Jv7byFgwGZkTZ05TTZeKi1Jh95yLvEPnDozwK+a5fhM3MxOt/hSgrmzpHWRN/vygbBrqF6FPUbsX+tqRvvpHNQsiJ9CyqRz8rN4PD+1nRin+UZORa3MOkeNT1MN+7yXUoFpT5mKM9WGeoOjBVc7ki0EVAFWAhiduUK9rxQH/7mJ2hNmIikodqPrHiyyQM+nsJ1N9PwSNrYfJG03TgWuOOIlo0tZdyQvTy5Yxwytx7CguBUMYnrK0erZnVw6ElM6od2tUrb4rsmit7aOePgw2ROUouWFN1zDwOA486MB+Zmx0o99yZc8kNGYH1bkrL/ylhC8u0TSkwptT/eE2h8Ldn6OT4uHC+bzAouQ8xGF6FFPE9Q+TP17ehBIoAO2ALoC6gle9WmVSb3O340na4Xg057WkWHbFm0lxVfBqhxZoTsWaeGy+LttvGtXLt7DFx6AYcemFBHgNFqJdbqjvrcat4iSQjfNxbfbOb729BE4M2I3q6e8EO1rqdzQ/QfeQxQXSHyOMbrG7mDuOko+7tbLroXrtogt2eOT7T+7bffPp72Lg2rqLul51FPeI77fg4L4ZEcetfQemWu4kp5UlOv1Yu/RUzCdSuWIU6tXPr1Cn0mWaN1S1taVkXqBvs9E7VvCGQbwYwsbK95ETEV6SNRBVNTWUtiq7AdSyyvU3heKtkzbil0VUronYT2tQVfDHiU+mRcDT/Sn1FMyYSkrlcharSmC9mTNBo+b1gQbJFKsrVu4k5wdxZZ7dZ+Tvw+BoaWqq6JM812A+MQyc1Q/oxmmLJ6XbKXGKKCunjiBvfVTmkrrhNUNVhSGm0o8O009SLJqqc0JWPob0npyFT6md01n+nSmdeXVDvlHBo+RmwKcmYkCfoyOmerz5ymjL3woC+IKwOY2azWeJodp0ZkgapEXH+jlc6a1i16D+jt3HUKxkfsPM1dlDsjXc6YnZfSRrK77WnU56nh/FccOyLR1jtJc5qUrfE2S45r0ySj1h96O0k9sVHdZ8uGXmqUjCxoUG7LjBjd8SZxqV9ibgJFU1L+LNQUelRWhI9I2PRcf2Q8QfCYE3MnmHwGQZ/Jhj8k9HvGflanfZ/hXzPqPeMej8b6tmdNs7fdevVrnjtcUONC0omD6pflM68oYJmnC3xknr6lKr2jelf/KUIzqN/c5dWOaBWfGXIFd8829JpUBG5G6G6DzRXHJKfI488yjOk7kNj1oEReIbwUkAZSXKOJAs0URu+p0d1RbBsAseM7ws+UlT/Ijv1Vo0AoJF4RdRPRLK4WYWTJWRRMb706MpXa9BHmX8DJOFaAC9zDMlZMGbf/AkVsgBoTWLuIjjM3hglpu0SSW9/VYJ0MD+Hnld1tTyoALPkWlpdhqgfiCS/D8hfStdAXAbSzEDPIi7eKhm8ikYOvFKKXxPXYWi9Q8pUZH0txiwVxwOXSt+j/k7fvflx9XdoRPer4Lxn81Vr3rzZt2THVEBwd9d6DXBh/bKS5zj55AorfrXH2PHupLTyaFppjIlwONWXg01LjB9fhT1qSA2lPwBKY55prveQbOyb1ZQGb+O457ps8UdZ/wM=">
+        <PXTab ID="tab" ParentId="phF_tab" TypeFullName="PX.Web.UI.PXTab">
+            <Children Key="Items">
+                <AddItem>
+                    <PXTabItem TypeFullName="PX.Web.UI.PXTabItem">
+                        <Prop Key="Text" Value="Case Preferences" />
+                        <Children Key="Template">
+                            <AddItem>
+                                <PXLayoutRule TypeFullName="PX.Web.UI.PXLayoutRule">
+                                    <Prop Key="Virtual:ApplyStylesheetSkin" />
+                                    <Prop Key="StartColumn" Value="True" />
+                                    <Prop Key="LabelsWidth" Value="XM" />
+                                    <Prop Key="ControlSize" Value="XM" />
+                                    <Prop Key="ID" Value="PXLayoutRuleCP1" />
+                                </PXLayoutRule>
+                            </AddItem>
+                            <AddItem>
+                                <PXLayoutRule TypeFullName="PX.Web.UI.PXLayoutRule">
+                                    <Prop Key="Virtual:ApplyStylesheetSkin" />
+                                    <Prop Key="StartGroup" Value="True" />
+                                    <Prop Key="GroupCaption" Value="Survey" />
+                                    <Prop Key="ID" Value="PXLayoutRuleCP2" />
+                                </PXLayoutRule>
+                            </AddItem>
+                            <AddItem>
+                                <PXSelector TypeFullName="PX.Web.UI.PXSelector">
+                                    <Prop Key="Virtual:ApplyStylesheetSkin" />
+                                    <Prop Key="DataField" Value="UsrNotificationMapID" />
+                                    <Prop Key="AllowEdit" Value="True" />
+                                    <Prop Key="ID" Value="CustEdUsrNotificationMapID1" />
+                                </PXSelector>
+                            </AddItem>
+                            <AddItem>
+                                <PXDateTimeEdit TypeFullName="PX.Web.UI.PXDateTimeEdit">
+                                    <Prop Key="Virtual:ApplyStylesheetSkin" />
+                                    <Prop Key="ID" Value="CstPXDateTimeEdit6" />
+                                    <Prop Key="DataField" Value="UsrLastSurveySyncDate" />
+                                    <Prop Key="Enabled" Value="False" />
+                                </PXDateTimeEdit>
+                            </AddItem>
+                            <AddItem>
+                                <PXTextEdit TypeFullName="PX.Web.UI.PXTextEdit">
+                                    <Prop Key="Virtual:ApplyStylesheetSkin" />
+                                    <Prop Key="ID" Value="CstPXTextEdit7" />
+                                    <Prop Key="DataField" Value="UsrSurveyID" />
+                                </PXTextEdit>
+                            </AddItem>
+                            <AddItem>
+                                <PXTextEdit TypeFullName="PX.Web.UI.PXTextEdit">
+                                    <Prop Key="Virtual:ApplyStylesheetSkin" />
+                                    <Prop Key="ID" Value="CstPXTextEdit14" />
+                                    <Prop Key="DataField" Value="UsrSurveyClientID" />
+                                </PXTextEdit>
+                            </AddItem>
+                            <AddItem>
+                                <PXTextEdit TypeFullName="PX.Web.UI.PXTextEdit">
+                                    <Prop Key="Virtual:ApplyStylesheetSkin" />
+                                    <Prop Key="ID" Value="CstPXTextEdit5" />
+                                    <Prop Key="DataField" Value="UsrAPIKey" />
+                                    <Prop Key="TextMode" Value="Password" />
+                                </PXTextEdit>
+                            </AddItem>
+                            <AddItem>
+                                <PXTextEdit TypeFullName="PX.Web.UI.PXTextEdit">
+                                    <Prop Key="Virtual:ApplyStylesheetSkin" />
+                                    <Prop Key="ID" Value="CstPXTextEdit15" />
+                                    <Prop Key="DataField" Value="UsrSurveyClientSecret" />
+                                    <Prop Key="TextMode" Value="Password" />
+                                </PXTextEdit>
+                            </AddItem>
+                            <AddItem>
+                                <PXButton TypeFullName="PX.Web.UI.PXButton">
+                                    <Prop Key="Virtual:ApplyStylesheetSkin" />
+                                    <Prop Key="ID" Value="CstButton16" />
+                                    <Prop Key="Text" Value="Get Access Token" />
+                                    <Prop Key="CommandSourceID" Value="ds" />
+                                    <Prop Key="CommandName" Value="Login" />
+                                </PXButton>
+                            </AddItem>
+                            <AddItem>
+                                <PXTextEdit TypeFullName="PX.Web.UI.PXTextEdit">
+                                    <Prop Key="Virtual:ApplyStylesheetSkin" />
+                                    <Prop Key="ID" Value="CstPXTextEdit4" />
+                                    <Prop Key="DataField" Value="UsrAccessToken" />
+                                    <Prop Key="TextMode" Value="Password" />
+                                </PXTextEdit>
+                            </AddItem>
+                            <Item OriginalIndex="0" />
+                        </Children>
+                    </PXTabItem>
+                </AddItem>
+            </Children>
+        </PXTab>
+        <PXDataSource ID="ds" ParentId="phDS_ds" TypeFullName="PX.Web.UI.PXDataSource">
+            <Children Key="CallbackCommands">
+                <AddItem>
+                    <PXDSCallbackCommand TypeFullName="PX.Web.UI.PXDSCallbackCommand">
+                        <Prop Key="Name" Value="CompleteAuthentication" />
+                        <Prop Key="Visible" Value="False" />
+                        <Prop Key="CommitChanges" Value="True" />
+                    </PXDSCallbackCommand>
+                </AddItem>
+                <AddItem>
+                    <PXDSCallbackCommand TypeFullName="PX.Web.UI.PXDSCallbackCommand">
+                        <Prop Key="Name" Value="Login" />
+                        <Prop Key="Visible" Value="False" />
+                        <Prop Key="CommitChanges" Value="True" />
+                    </PXDSCallbackCommand>
+                </AddItem>
+            </Children>
+        </PXDataSource>
+    </Page>
+    <Page path="~/pages/cr/cr306000.aspx" pageSource="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">
+        <PXFormView ID="form" ParentId="phF_form" TypeFullName="PX.Web.UI.PXFormView">
+            <Children Key="Template">
+                <AddItem>
+                    <PXLayoutRule TypeFullName="PX.Web.UI.PXLayoutRule">
+                        <Prop Key="Virtual:ApplyStylesheetSkin" />
+                        <Prop Key="StartColumn" Value="True" />
+                        <Prop Key="LabelsWidth" Value="S" />
+                        <Prop Key="ControlSize" Value="SM" />
+                        <Children Key="Controls" />
+                    </PXLayoutRule>
+                </AddItem>
+                <AddItem>
+                    <PXSelector TypeFullName="PX.Web.UI.PXSelector">
+                        <Prop Key="Virtual:ApplyStylesheetSkin" />
+                        <Prop Key="DataField" Value="CaseCD" />
+                        <Prop Key="FilterByAllFields" Value="True" />
+                        <Prop Key="AutoRefresh" Value="True" />
+                        <Prop Key="ID" Value="edCaseCD" />
+                    </PXSelector>
+                </AddItem>
+                <AddItem>
+                    <PXDropDown TypeFullName="PX.Web.UI.PXDropDown">
+                        <Prop Key="Virtual:ApplyStylesheetSkin" />
+                        <Prop Key="CommitChanges" Value="True" />
+                        <Prop Key="DataField" Value="Status" />
+                        <Prop Key="AllowNull" Value="False" />
+                        <Prop Key="ID" Value="edStatus" />
+                    </PXDropDown>
+                </AddItem>
+                <AddItem>
+                    <PXDropDown TypeFullName="PX.Web.UI.PXDropDown">
+                        <Prop Key="Virtual:ApplyStylesheetSkin" />
+                        <Prop Key="CommitChanges" Value="True" />
+                        <Prop Key="DataField" Value="Resolution" />
+                        <Prop Key="AllowNull" Value="False" />
+                        <Prop Key="ID" Value="edResolution" />
+                    </PXDropDown>
+                </AddItem>
+                <AddItem>
+                    <PXDropDown TypeFullName="PX.Web.UI.PXDropDown">
+                        <Prop Key="Virtual:ApplyStylesheetSkin" />
+                        <Prop Key="CommitChanges" Value="True" />
+                        <Prop Key="SelectedIndex" Value="-1" />
+                        <Prop Key="DataField" Value="Severity" />
+                        <Prop Key="AllowNull" Value="False" />
+                        <Prop Key="ID" Value="edSeverity" />
+                    </PXDropDown>
+                </AddItem>
+                <AddItem>
+                    <PXDropDown TypeFullName="PX.Web.UI.PXDropDown">
+                        <Prop Key="Virtual:ApplyStylesheetSkin" />
+                        <Prop Key="SelectedIndex" Value="-1" />
+                        <Prop Key="DataField" Value="Priority" />
+                        <Prop Key="AllowNull" Value="False" />
+                        <Prop Key="ID" Value="edPriority" />
+                    </PXDropDown>
+                </AddItem>
+                <AddItem>
+                    <PXSelector TypeFullName="PX.Web.UI.PXSelector">
+                        <Prop Key="Virtual:ApplyStylesheetSkin" />
+                        <Prop Key="DataField" Value="CaseClassID" />
+                        <Prop Key="FilterByAllFields" Value="True" />
+                        <Prop Key="TextMode" Value="Search" />
+                        <Prop Key="AllowEdit" Value="True" />
+                        <Prop Key="CommitChanges" Value="True" />
+                        <Prop Key="ID" Value="edCaseClassID" />
+                    </PXSelector>
+                </AddItem>
+                <AddItem>
+                    <PXLayoutRule TypeFullName="PX.Web.UI.PXLayoutRule">
+                        <Prop Key="Virtual:ApplyStylesheetSkin" />
+                        <Prop Key="StartColumn" Value="True" />
+                        <Prop Key="LabelsWidth" Value="S" />
+                        <Prop Key="ControlSize" Value="XM" />
+                        <Children Key="Controls" />
+                    </PXLayoutRule>
+                </AddItem>
+                <AddItem>
+                    <PXLayoutRule TypeFullName="PX.Web.UI.PXLayoutRule">
+                        <Prop Key="Virtual:ApplyStylesheetSkin" />
+                        <Prop Key="ColumnSpan" Value="2" />
+                        <Children Key="Controls" />
+                    </PXLayoutRule>
+                </AddItem>
+                <AddItem>
+                    <PXTextEdit TypeFullName="PX.Web.UI.PXTextEdit">
+                        <Prop Key="Virtual:ApplyStylesheetSkin" />
+                        <Prop Key="DataField" Value="Subject" />
+                        <Prop Key="ID" Value="edSubject" />
+                    </PXTextEdit>
+                </AddItem>
+                <AddItem>
+                    <PXSegmentMask TypeFullName="PX.Web.UI.PXSegmentMask">
+                        <Prop Key="Virtual:ApplyStylesheetSkin" />
+                        <Prop Key="DataField" Value="CustomerID" />
+                        <Prop Key="FilterByAllFields" Value="True" />
+                        <Prop Key="TextMode" Value="Search" />
+                        <Prop Key="AutoRefresh" Value="True" />
+                        <Prop Key="AllowEdit" Value="True" />
+                        <Prop Key="CommitChanges" Value="True" />
+                        <Prop Key="ID" Value="edCustomerID" />
+                    </PXSegmentMask>
+                </AddItem>
+                <AddItem>
+                    <PXSelector TypeFullName="PX.Web.UI.PXSelector">
+                        <Prop Key="Virtual:ApplyStylesheetSkin" />
+                        <Prop Key="DataField" Value="ContactID" />
+                        <Prop Key="TextField" Value="displayName" />
+                        <Prop Key="FilterByAllFields" Value="True" />
+                        <Prop Key="DisplayMode" Value="Text" />
+                        <Prop Key="TextMode" Value="Search" />
+                        <Prop Key="AutoRefresh" Value="True" />
+                        <Prop Key="AllowEdit" Value="True" />
+                        <Prop Key="CommitChanges" Value="True" />
+                        <Prop Key="ID" Value="edContactID" />
+                    </PXSelector>
+                </AddItem>
+                <AddItem>
+                    <PXSelector TypeFullName="PX.Web.UI.PXSelector">
+                        <Prop Key="Virtual:ApplyStylesheetSkin" />
+                        <Prop Key="DataField" Value="OwnerID" />
+                        <Prop Key="FilterByAllFields" Value="True" />
+                        <Prop Key="DisplayMode" Value="Text" />
+                        <Prop Key="TextMode" Value="Search" />
+                        <Prop Key="AutoRefresh" Value="True" />
+                        <Prop Key="CommitChanges" Value="True" />
+                        <Prop Key="ID" Value="OwnerID" />
+                    </PXSelector>
+                </AddItem>
+                <AddItem>
+                    <PXSelector TypeFullName="PX.Web.UI.PXSelector">
+                        <Prop Key="Virtual:ApplyStylesheetSkin" />
+                        <Prop Key="DataField" Value="ContractID" />
+                        <Prop Key="FilterByAllFields" Value="True" />
+                        <Prop Key="TextMode" Value="Search" />
+                        <Prop Key="AutoRefresh" Value="True" />
+                        <Prop Key="AllowEdit" Value="True" />
+                        <Prop Key="CommitChanges" Value="True" />
+                        <Prop Key="ID" Value="edContractID" />
+                    </PXSelector>
+                </AddItem>
+                <AddItem>
+                    <PXLayoutRule TypeFullName="PX.Web.UI.PXLayoutRule">
+                        <Prop Key="Virtual:ApplyStylesheetSkin" />
+                        <Prop Key="StartColumn" Value="True" />
+                        <Prop Key="LabelsWidth" Value="S" />
+                        <Prop Key="ControlSize" Value="SM" />
+                        <Children Key="Controls" />
+                    </PXLayoutRule>
+                </AddItem>
+                <AddItem>
+                    <PXDateTimeEdit TypeFullName="PX.Web.UI.PXDateTimeEdit">
+                        <Prop Key="Virtual:ApplyStylesheetSkin" />
+                        <Prop Key="DisplayFormat" Value="g" />
+                        <Prop Key="Size" Value="SM" />
+                        <Prop Key="Enabled" Value="False" />
+                        <Prop Key="DataField" Value="CreatedDateTime" />
+                        <Prop Key="ID" Value="edCreatedDateTime" />
+                    </PXDateTimeEdit>
+                </AddItem>
+                <AddItem>
+                    <PXDateTimeEdit TypeFullName="PX.Web.UI.PXDateTimeEdit">
+                        <Prop Key="Virtual:ApplyStylesheetSkin" />
+                        <Prop Key="DisplayFormat" Value="g" />
+                        <Prop Key="Size" Value="SM" />
+                        <Prop Key="Enabled" Value="False" />
+                        <Prop Key="DataField" Value="LastActivity" />
+                        <Prop Key="ID" Value="edLastModifiedDateTime" />
+                    </PXDateTimeEdit>
+                </AddItem>
+                <AddItem>
+                    <PXLayoutRule TypeFullName="PX.Web.UI.PXLayoutRule">
+                        <Prop Key="Virtual:ApplyStylesheetSkin" />
+                        <Prop Key="Merge" Value="True" />
+                        <Children Key="Controls" />
+                    </PXLayoutRule>
+                </AddItem>
+                <AddItem>
+                    <PXDateTimeEdit TypeFullName="PX.Web.UI.PXDateTimeEdit">
+                        <Prop Key="Virtual:ApplyStylesheetSkin" />
+                        <Prop Key="Size" Value="SM" />
+                        <Prop Key="Enabled" Value="False" />
+                        <Prop Key="DataField" Value="ResolutionDate" />
+                        <Prop Key="ID" Value="edResolutionDate" />
+                    </PXDateTimeEdit>
+                </AddItem>
+                <AddItem>
+                    <PXDateTimeEdit TypeFullName="PX.Web.UI.PXDateTimeEdit">
+                        <Prop Key="Virtual:ApplyStylesheetSkin" />
+                        <Prop Key="Size" Value="SM" />
+                        <Prop Key="DataField" Value="UsrNextContactDate" />
+                        <Prop Key="ID" Value="CustEdUsrNextContactDate1" />
+                    </PXDateTimeEdit>
+                </AddItem>
+                <PXLayoutRule OriginalIndex="0" Remove="True" />
+                <PXSelector DataField="CaseCD" OriginalIndex="1" Remove="True" />
+                <PXDateTimeEdit DataField="CreatedDateTime" OriginalIndex="2" Remove="True" />
+                <PXDateTimeEdit DataField="LastActivity" OriginalIndex="3" Remove="True" />
+                <PXDateTimeEdit DataField="SLAETA" OriginalIndex="4" Remove="True" />
+                <PXDateTimeEdit DataField="ResolutionDate" OriginalIndex="5" Remove="True" />
+                <PXLayoutRule OriginalIndex="6" Remove="True" />
+                <PXSelector DataField="CaseClassID" OriginalIndex="7" Remove="True" />
+                <PXSegmentMask DataField="CustomerID" OriginalIndex="8" Remove="True" />
+                <PXSelector DataField="ContactID" OriginalIndex="9" Remove="True" />
+                <PXSelector DataField="OwnerID" OriginalIndex="10" Remove="True" />
+                <PXLayoutRule ID="PXLayoutRule4" OriginalIndex="11" Remove="True" />
+                <PXTextEdit DataField="Subject" OriginalIndex="12" Remove="True" />
+                <PXLayoutRule OriginalIndex="13" Remove="True" />
+                <PXDropDown DataField="Status" OriginalIndex="14" Remove="True" />
+                <PXDropDown DataField="Resolution" OriginalIndex="15" Remove="True" />
+                <PXDropDown DataField="Severity" OriginalIndex="16" Remove="True" />
+                <PXDropDown DataField="Priority" OriginalIndex="17" Remove="True" />
+            </Children>
+            <Prop Key="AllowCollapse" Value="True" />
+        </PXFormView>
+        <PXDataSource ID="ds" ParentId="phDS_ds" TypeFullName="PX.Web.UI.PXDataSource">
+            <Children Key="CallbackCommands">
+                <AddItem>
+                    <PXDSCallbackCommand TypeFullName="PX.Web.UI.PXDSCallbackCommand">
+                        <Prop Key="Name" Value="SubmitToTfs" />
+                        <Prop Key="Visible" Value="False" />
+                        <Prop Key="CommitChanges" Value="True" />
+                    </PXDSCallbackCommand>
+                </AddItem>
+            </Children>
+        </PXDataSource>
+        <PXTabItem Text="Additional Info" ParentId="phG_tab_Items#1" TypeFullName="PX.Web.UI.PXTabItem">
+            <Children Key="Template">
+                <PXSelector DataField="WorkgroupID" OriginalIndex="10" Remove="True" />
+            </Children>
+        </PXTabItem>
+        <PXTab ID="tab" ParentId="phG_tab" TypeFullName="PX.Web.UI.PXTab">
+            <Children Key="Items">
+                <AddItem>
+                    <PXTabItem TypeFullName="PX.Web.UI.PXTabItem">
+                        <Prop Key="Text" Value="Survey" />
+                        <Children Key="Template">
+                            <AddItem>
+                                <PXFormView TypeFullName="PX.Web.UI.PXFormView">
+                                    <Prop Key="Virtual:ApplyStylesheetSkin" />
+                                    <Prop Key="ID" Value="CstFormView23" />
+                                    <Prop Key="SkinID" Value="Transparent" />
+                                    <Prop Key="DataMember" Value="CaseCurrent" />
+                                    <Children Key="Template">
+                                        <AddItem>
+                                            <PXDateTimeEdit TypeFullName="PX.Web.UI.PXDateTimeEdit">
+                                                <Prop Key="Virtual:ApplyStylesheetSkin" />
+                                                <Prop Key="ID" Value="CstPXDateTimeEdit26" />
+                                                <Prop Key="Enabled" Value="False" />
+                                                <Prop Key="DataField" Value="UsrResponseDate" />
+                                            </PXDateTimeEdit>
+                                        </AddItem>
+                                        <AddItem>
+                                            <PXCheckBox TypeFullName="PX.Web.UI.PXCheckBox">
+                                                <Prop Key="Virtual:ApplyStylesheetSkin" />
+                                                <Prop Key="ID" Value="CstPXCheckBox27" />
+                                                <Prop Key="DataField" Value="UsrSurveyReportingEligible" />
+                                            </PXCheckBox>
+                                        </AddItem>
+                                        <AddItem>
+                                            <PXLayoutRule TypeFullName="PX.Web.UI.PXLayoutRule">
+                                                <Prop Key="Virtual:ApplyStylesheetSkin" />
+                                                <Prop Key="ID" Value="CstPXLayoutRule32" />
+                                                <Prop Key="StartGroup" Value="True" />
+                                                <Prop Key="GroupCaption" Value="Internal Comment" />
+                                                <Prop Key="LabelsWidth" Value="M" />
+                                                <Prop Key="ControlSize" Value="XXL" />
+                                                <Children Key="Controls" />
+                                            </PXLayoutRule>
+                                        </AddItem>
+                                        <AddItem>
+                                            <PXTextEdit TypeFullName="PX.Web.UI.PXTextEdit">
+                                                <Prop Key="Virtual:ApplyStylesheetSkin" />
+                                                <Prop Key="TextMode" Value="MultiLine" />
+                                                <Prop Key="DataField" Value="UsrInternalComment" />
+                                                <Prop Key="ID" Value="CstPXTextEdit30" />
+                                            </PXTextEdit>
+                                        </AddItem>
+                                        <AddItem>
+                                            <PXTextEdit TypeFullName="PX.Web.UI.PXTextEdit">
+                                                <Prop Key="Virtual:ApplyStylesheetSkin" />
+                                                <Prop Key="Enabled" Value="False" />
+                                                <Prop Key="DataField" Value="UsrInternalCommentByName" />
+                                                <Prop Key="ID" Value="CstPXTextEdit31" />
+                                            </PXTextEdit>
+                                        </AddItem>
+                                    </Children>
+                                </PXFormView>
+                            </AddItem>
+                            <AddItem>
+                                <PXGrid TypeFullName="PX.Web.UI.PXGrid">
+                                    <Prop Key="Virtual:ApplyStylesheetSkin" />
+                                    <Prop Key="ID" Value="Responses" />
+                                    <Prop Key="SyncPosition" Value="True" />
+                                    <Prop Key="SkinID" Value="Inquire" />
+                                    <Prop Key="TabIndex" Value="8900" />
+                                    <Prop Key="Width" Value="100%" />
+                                    <Prop Key="MatrixMode" Value="True" />
+                                    <Prop Key="AutoSize.Enabled" Value="True" />
+                                    <Prop Key="AutoSize.Container" Value="Window" />
+                                    <Prop Key="Mode.AllowFormEdit" Value="True" />
+                                    <Prop Key="DataSourceID" Value="ds" />
+                                    <Children Key="Levels">
+                                        <AddItem>
+                                            <PXGridLevel TypeFullName="PX.Web.UI.PXGridLevel">
+                                                <Prop Key="DataMember" Value="Response" />
+                                                <Children Key="RowTemplate">
+                                                    <AddItem>
+                                                        <PXDropDown TypeFullName="PX.Web.UI.PXDropDown">
+                                                            <Prop Key="Virtual:ApplyStylesheetSkin" />
+                                                            <Prop Key="ID" Value="edCRSurveyQuestion__Question" />
+                                                            <Prop Key="DataField" Value="CRSurveyQuestion__Question" />
+                                                        </PXDropDown>
+                                                    </AddItem>
+                                                    <AddItem>
+                                                        <PXSelector TypeFullName="PX.Web.UI.PXSelector">
+                                                            <Prop Key="Virtual:ApplyStylesheetSkin" />
+                                                            <Prop Key="ID" Value="edAnswerLineNbr" />
+                                                            <Prop Key="DataField" Value="AnswerLineNbr" />
+                                                            <Prop Key="AutoRefresh" Value="True" />
+                                                        </PXSelector>
+                                                    </AddItem>
+                                                    <AddItem>
+                                                        <PXTextEdit TypeFullName="PX.Web.UI.PXTextEdit">
+                                                            <Prop Key="Virtual:ApplyStylesheetSkin" />
+                                                            <Prop Key="DataField" Value="Answer" />
+                                                            <Prop Key="ID" Value="edAnswer" />
+                                                        </PXTextEdit>
+                                                    </AddItem>
+                                                </Children>
+                                                <Children Key="Columns">
+                                                    <AddItem>
+                                                        <PXGridColumn TypeFullName="PX.Web.UI.PXGridColumn">
+                                                            <Prop Key="DataField" Value="CRSurveyQuestion__Question" />
+                                                            <Prop Key="Width" Value="500px" />
+                                                        </PXGridColumn>
+                                                    </AddItem>
+                                                    <AddItem>
+                                                        <PXGridColumn TypeFullName="PX.Web.UI.PXGridColumn">
+                                                            <Prop Key="DataField" Value="AnswerLineNbr" />
+                                                            <Prop Key="Width" Value="100px" />
+                                                        </PXGridColumn>
+                                                    </AddItem>
+                                                    <AddItem>
+                                                        <PXGridColumn TypeFullName="PX.Web.UI.PXGridColumn">
+                                                            <Prop Key="DataField" Value="Answer" />
+                                                            <Prop Key="Width" Value="100px" />
+                                                        </PXGridColumn>
+                                                    </AddItem>
+                                                </Children>
+                                            </PXGridLevel>
+                                        </AddItem>
+                                    </Children>
+                                </PXGrid>
+                            </AddItem>
+                        </Children>
+                    </PXTabItem>
+                </AddItem>
+            </Children>
+        </PXTab>
+    </Page>
+    <File AppRelativePath="Bin\PX.ObjectsExt.SurveyMonkey.dll" FileID="15eb3d8b-f496-4433-8ef9-e89bf40b5baf" />
+    <File AppRelativePath="Bin\PX.SurveyMonkeyReader.dll" FileID="4505062b-1fa7-4d68-8ddf-8d61e876131a" />
+    <File AppRelativePath="Frames\SurveyMonkeyAuthenticator.html" FileID="411675bd-8eae-4d3b-94cc-ec0c00ddace7" />
+    <File AppRelativePath="Pages\MK\MK501000.aspx" FileID="71221cf1-3cbd-455c-b112-31d8c88ccf87" />
+    <File AppRelativePath="Pages\MK\MK501000.aspx.cs" FileID="fa546105-8ff6-4330-a02b-68ea36e96f33" />
+    <File AppRelativePath="Pages\MK\MK502000.aspx" FileID="662a799f-97de-4ba2-b880-310850524531" />
+    <File AppRelativePath="Pages\MK\MK502000.aspx.cs" FileID="a9c056d8-cbc1-4d18-935c-6b8853da8a57" />
+    <SiteMapNode>
+        <data-set>
+            <relations format-version="3" relations-version="20160101" main-table="SiteMap" />
+            <layout>
+                <table name="SiteMap" />
+            </layout>
+            <data>
+                <SiteMap>
+                    <row Position="7" Title="Case Surveys" Url="~/Pages/MK/MK501000.aspx" Expanded="0" IsFolder="0" ScreenID="MK501000" NodeID="cc78a29c-b8cf-4db9-94e3-126480d13b2f" ParentID="11677ee3-6ec6-4fc1-99a6-cfb082cdc0e5" />
+                </SiteMap>
+            </data>
+        </data-set>
+    </SiteMapNode>
+    <SiteMapNode>
+        <data-set>
+            <relations format-version="3" relations-version="20160101" main-table="SiteMap" />
+            <layout>
+                <table name="SiteMap" />
+            </layout>
+            <data>
+                <SiteMap>
+                    <row Position="8" Title="Case Survey Responses" Url="~/Pages/MK/MK502000.aspx" Expanded="0" IsFolder="0" ScreenID="MK502000" NodeID="f43d7be8-1b1d-4a5b-acae-32a4d9a99a30" ParentID="11677ee3-6ec6-4fc1-99a6-cfb082cdc0e5" />
+                </SiteMap>
+            </data>
+        </data-set>
+    </SiteMapNode>
+    <Sql TableName="CaseSurveyHistory" TableSchemaXml="#CDATA">
+        <CDATA name="TableSchemaXml"><![CDATA[<table name="CaseSurveyHistory">
+  <col name="CompanyID" type="Int" default="Zero" />
+  <col name="PKID" type="Int" identity="true" />
+  <col name="ContactID" type="Int" />
+  <col name="OwnerID" type="UniqueIdentifier" />
+  <col name="CreatedByID" type="UniqueIdentifier" />
+  <col name="CreatedDateTime" type="DateTime" />
+  <index name="PK__CaseSurv__1877346BA4FAD756" clustered="true" primary="true" unique="true">
+    <col name="CompanyID" />
+    <col name="PKID" />
+  </index>
+</table>]]></CDATA>
+    </Sql>
+    <Sql TableName="CRCaseSurveyResponse" TableSchemaXml="#CDATA">
+        <CDATA name="TableSchemaXml"><![CDATA[<table name="CRCaseSurveyResponse">
+  <col name="CompanyID" type="Int" default="Zero" />
+  <col name="CaseID" type="Int" />
+  <col name="QuestionID" type="Int" />
+  <col name="AnswerLineNbr" type="Int" />
+  <col name="Answer" type="NVarChar(MAX)" nullable="true" />
+  <col name="tstamp" type="Timestamp" />
+  <col name="CreatedByID" type="UniqueIdentifier" />
+  <col name="CreatedByScreenID" type="Char(8)" />
+  <col name="CreatedDateTime" type="DateTime" />
+  <col name="LastModifiedByID" type="UniqueIdentifier" />
+  <col name="LastModifiedByScreenID" type="Char(8)" />
+  <col name="LastModifiedDateTime" type="DateTime" />
+  <index name="CRCaseSurveyResponse_PK" clustered="true" primary="true" unique="true">
+    <col name="CompanyID" />
+    <col name="CaseID" />
+    <col name="QuestionID" />
+	<col name="AnswerLineNbr" />
+  </index>
+</table>]]></CDATA>
+    </Sql>
+    <Sql TableName="CRSurveyAnswer" TableSchemaXml="#CDATA">
+        <CDATA name="TableSchemaXml"><![CDATA[<table name="CRSurveyAnswer">
+  <col name="CompanyID" type="Int" default="Zero" />
+  <col name="QuestionID" type="Int" />
+  <col name="AnswerLineNbr" type="Int" />
+  <col name="SurveyAnswerID" type="BigInt" />
+  <col name="Answer" type="NVarChar(MAX)" />
+  <col name="tstamp" type="Timestamp" />
+  <col name="CreatedByID" type="UniqueIdentifier" />
+  <col name="CreatedByScreenID" type="Char(8)" />
+  <col name="CreatedDateTime" type="DateTime" />
+  <col name="LastModifiedByID" type="UniqueIdentifier" />
+  <col name="LastModifiedByScreenID" type="Char(8)" />
+  <col name="LastModifiedDateTime" type="DateTime" />
+  <col name="SurveyLastModified" type="DateTime" />
+  <index name="CRCaseSurveyAnswer_PK" clustered="true" primary="true" unique="true">
+    <col name="CompanyID" />
+    <col name="QuestionID" />
+    <col name="AnswerLineNbr" />
+  </index>
+</table>]]></CDATA>
+    </Sql>
+    <Sql TableName="CRSurveyQuestion" TableSchemaXml="#CDATA">
+        <CDATA name="TableSchemaXml"><![CDATA[<table name="CRSurveyQuestion">
+  <col name="CompanyID" type="Int" default="Zero" />
+  <col name="QuestionID" type="Int" identity="true" />
+  <col name="ParentQuestionID" type="Int" nullable="true" />
+  <col name="SurveyQuestionID" type="BigInt" />
+  <col name="SurveyLastModified" type="DateTime" />
+  <col name="Question" type="NVarChar(MAX)" nullable="true" />
+  <col name="AnswerLineCntr" type="Int" />
+  <col name="tstamp" type="Timestamp" />
+  <col name="CreatedByID" type="UniqueIdentifier" />
+  <col name="CreatedByScreenID" type="Char(8)" />
+  <col name="CreatedDateTime" type="DateTime" />
+  <col name="LastModifiedByID" type="UniqueIdentifier" />
+  <col name="LastModifiedByScreenID" type="Char(8)" />
+  <col name="LastModifiedDateTime" type="DateTime" />
+  <index name="CRCaseSurveyQuestion_PK" clustered="true" primary="true" unique="true">
+    <col name="CompanyID" />
+    <col name="QuestionID" />
+  </index>
+</table>]]></CDATA>
+    </Sql>
+    <Sql TableName="updateCRCase" CustomScript="#CDATA">
+        <CDATA name="CustomScript"><![CDATA[
+	
+IF NOT EXISTS(SELECT * FROM Sys.Columns WHERE Name = N'UsrResponseID' and Object_ID = Object_ID(N'CRCase'))
+BEGIN
+	ALTER TABLE CRCase ADD UsrResponseID BIGINT NULL
+END
+GO
+
+IF NOT EXISTS(SELECT * FROM Sys.Columns WHERE Name = N'UsrResponseDate' and Object_ID = Object_ID(N'CRCase'))
+BEGIN
+	ALTER TABLE CRCase ADD UsrResponseDate DATETIME NULL
+END
+GO
+
+IF NOT EXISTS(SELECT * FROM Sys.Columns WHERE Name = N'UsrInternalComment' and Object_ID = Object_ID(N'CRCase'))
+BEGIN
+	ALTER TABLE CRCase ADD UsrInternalComment NVARCHAR(255) NULL
+END
+GO
+
+IF NOT EXISTS(SELECT * FROM Sys.Columns WHERE Name = N'UsrInternalCommentByName' and Object_ID = Object_ID(N'CRCase'))
+BEGIN
+	ALTER TABLE CRCase ADD UsrInternalCommentByName NVARCHAR(255) NULL
+END
+GO
+
+IF NOT EXISTS(SELECT * FROM Sys.Columns WHERE Name = N'UsrSurveyReportingEligible' and Object_ID = Object_ID(N'CRCase'))
+BEGIN
+	ALTER TABLE CRCase ADD UsrSurveyReportingEligible BIT NULL
+END
+GO
+
+]]></CDATA>
+    </Sql>
+    <Sql TableName="updateCRSetup" CustomScript="#CDATA">
+        <CDATA name="CustomScript"><![CDATA[
+	
+IF NOT EXISTS(SELECT * FROM Sys.Columns WHERE Name = N'UsrNotificationMapID' and Object_ID = Object_ID(N'CRSetup'))
+BEGIN
+	alter table CRSetup add UsrNotificationMapID int null
+END
+GO
+
+IF NOT EXISTS(SELECT * FROM Sys.Columns WHERE Name = N'UsrSurveyID' and Object_ID = Object_ID(N'CRSetup'))
+BEGIN
+	ALTER TABLE CRSetup ADD UsrSurveyID NVARCHAR(100) NULL
+END
+GO
+
+IF NOT EXISTS(SELECT * FROM Sys.Columns WHERE Name = N'UsrAPIKey' and Object_ID = Object_ID(N'CRSetup'))
+BEGIN
+	ALTER TABLE CRSetup ADD UsrAPIKey NVARCHAR(100) NULL
+END
+GO
+
+IF NOT EXISTS(SELECT * FROM Sys.Columns WHERE Name = N'UsrAccessToken' and Object_ID = Object_ID(N'CRSetup'))
+BEGIN
+	ALTER TABLE CRSetup ADD UsrAccessToken NVARCHAR(300) NULL
+END
+GO
+
+IF NOT EXISTS(SELECT * FROM Sys.Columns WHERE Name = N'UsrLastSurveySyncDate' and Object_ID = Object_ID(N'CRSetup'))
+BEGIN
+	ALTER TABLE CRSetup ADD UsrLastSurveySyncDate DATETIME NULL
+END
+GO
+
+IF NOT EXISTS(SELECT * FROM Sys.Columns WHERE Name = N'UsrSurveyClientID' and Object_ID = Object_ID(N'CRSetup'))
+BEGIN
+	ALTER TABLE CRSetup ADD UsrSurveyClientID NVARCHAR(100) NULL
+END
+GO
+
+IF NOT EXISTS(SELECT * FROM Sys.Columns WHERE Name = N'UsrSurveyClientSecret' and Object_ID = Object_ID(N'CRSetup'))
+BEGIN
+	ALTER TABLE CRSetup ADD UsrSurveyClientSecret NVARCHAR(100) NULL
+END
+GO
+
+]]></CDATA>
+    </Sql>
+</Customization>

@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>SurveyMonkey Authenticator</title>
+    <script type="text/javascript">
+        function refreshSurveyMonkeyCode(str) {
+            var ds = this.opener.px_context.doc.main.px_cm.findDataSource();
+            if (ds != null) ds.executeCallback("CompleteAuthentication", str);
+            window.close();
+        }
+        function redirectToSurveyMonkey(url) {
+            window.location = url;
+        }
+
+        if (window.location.hash && window.location.hash.length > 0) {
+            redirectToSurveyMonkey(window.location.hash.substring(1).split('#')[0]);
+        }
+        else if (window.location.search) {
+            refreshSurveyMonkeyCode(window.location.search);
+        }
+    </script>
+</head>
+<body style="height:0px;margin:0px;padding:0px">
+</body>
+</html>
