@@ -40,13 +40,22 @@ Quick Start
 2. Create the template.  For example, it might look like this:
 ![Notification Template Example](/READMEAssets/notificaton_template_example.PNG)
 
+##### (Optional) Step 4: Keep important fields editable after case closure
+If you want the internal comments field & survey reporting eligible checkbox to stay editable after you close a case, do the following:
+1. Go to the Automation Steps screen (System/Automation/Automation Steps)
+2. Use the Screen ID selector to choose "Cases"
+3. If Step ID and Description do not default to "Closed", set both of them to "Closed"
+4. In the fields tab, add two new rows as shown in the following picture:
+![Automation Steps](/READMEAssets/automation_steps.PNG)
+5. Click Save
+
 ### Configuration
 1. Go to Organization/Cash Management/Configuration/Customer Management Preferences and click the new "Case Preferences" tab
 2. Set the Notification Template to the one you created
 3. Set the Client ID, Client Secret, and API Key from the "Credentials" section of your SurveyMonkey app's settings page as shown:
 ![](/READMEAssets/app_credentials.PNG)
 4. To set the Survey ID, use SurveyMonkey's /surveys endpoint (see https://developer.surveymonkey.com/api/v3/#surveys)
-5. Save the changes to the page, and then click "GET ACCESS TOKEN".  
+5. Save the changes to the page, and then click "GET ACCESS TOKEN" 
 *Note: If you get an "authorization request failed" error, re-check the values you just set and make sure your OAuth Redirect Url is correct.*
 
 Known Issues
