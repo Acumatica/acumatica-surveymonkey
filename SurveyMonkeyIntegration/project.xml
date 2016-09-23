@@ -473,8 +473,8 @@
             </Children>
         </PXTab>
     </Page>
-    <File AppRelativePath="Bin\PX.ObjectsExt.SurveyMonkey.dll" FileID="15eb3d8b-f496-4433-8ef9-e89bf40b5baf" />
-    <File AppRelativePath="Bin\PX.SurveyMonkeyReader.dll" FileID="4505062b-1fa7-4d68-8ddf-8d61e876131a" />
+    <File AppRelativePath="Bin\PX.ObjectsExt.SurveyMonkey.dll" FileID="65f69a2a-c10a-43fa-b957-fd10b335e948" />
+    <File AppRelativePath="Bin\PX.SurveyMonkeyReader.dll" FileID="caf88ef8-731e-4edb-a6bf-37afed17a781" />
     <File AppRelativePath="Frames\SurveyMonkeyAuthenticator.html" FileID="411675bd-8eae-4d3b-94cc-ec0c00ddace7" />
     <File AppRelativePath="Pages\MK\MK501000.aspx" FileID="71221cf1-3cbd-455c-b112-31d8c88ccf87" />
     <File AppRelativePath="Pages\MK\MK501000.aspx.cs" FileID="fa546105-8ff6-4330-a02b-68ea36e96f33" />

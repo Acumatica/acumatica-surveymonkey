@@ -6,7 +6,7 @@ namespace PX.SurveyMonkeyReader.Commands
 {
     public class ApiCommands
     {
-        private const string SurveyMonkeyDateTimeFormat = "yyyy-MM-ddThh:mm:ss";
+        private const string SurveyMonkeyDateTimeFormat = "yyyy-MM-ddTHH:mm:ss";
         private const string SurveyMonkeyApiUrl = "https://api.surveymonkey.net/v3";
 
         private static RestClientExt _restClient;
