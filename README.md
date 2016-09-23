@@ -42,6 +42,7 @@ Quick Start
 
 ##### (Optional) Step 4: Keep important fields editable after case closure
 If you want the internal comments field & survey reporting eligible checkbox to stay editable after you close a case, do the following:
+
 1. Go to the Automation Steps screen (System/Automation/Automation Steps)
 2. Use the Screen ID selector to choose "Cases"
 3. If Step ID and Description do not default to "Closed", set both of them to "Closed"
