@@ -1,7 +1,7 @@
 [![Project Status](http://opensource.box.com/badges/active.svg)](http://opensource.box.com/badges)
 
-SurveyMonkey Integration Extension for Acumatica
-==================================================
+Acumatica SurveyMonkey Integration
+==================================
 
 An extension that allows a SurveyMonkey satisfaction survey to be used with customer support cases.  With this extension, you can do the following:
 * View a list of customers with recently closed support cases
