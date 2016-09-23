@@ -76,7 +76,8 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>copy $(TargetPath) "$(TargetDir)..\..\..\SurveyMonkeyIntegration\Bin"</PostBuildEvent>
+    <PostBuildEvent>copy $(TargetPath) "$(SolutionDir)SurveyMonkeyIntegration\Bin"
+PowerShell -ExecutionPolicy Unrestricted -file $(SolutionDir)scripts\UpdateCustomizationProject.ps1</PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
