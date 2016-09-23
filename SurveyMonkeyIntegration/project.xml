@@ -488,7 +488,7 @@
             </layout>
             <data>
                 <SiteMap>
-                    <row Position="7" Title="Case Surveys" Url="~/Pages/MK/MK501000.aspx" Expanded="0" IsFolder="0" ScreenID="MK501000" NodeID="cc78a29c-b8cf-4db9-94e3-126480d13b2f" ParentID="11677ee3-6ec6-4fc1-99a6-cfb082cdc0e5" />
+                    <row Position="7" Title="Send Case Surveys" Url="~/Pages/MK/MK501000.aspx" Expanded="0" IsFolder="0" ScreenID="MK501000" NodeID="cc78a29c-b8cf-4db9-94e3-126480d13b2f" ParentID="11677ee3-6ec6-4fc1-99a6-cfb082cdc0e5" />
                 </SiteMap>
             </data>
         </data-set>
@@ -501,7 +501,7 @@
             </layout>
             <data>
                 <SiteMap>
-                    <row Position="8" Title="Case Survey Responses" Url="~/Pages/MK/MK502000.aspx" Expanded="0" IsFolder="0" ScreenID="MK502000" NodeID="f43d7be8-1b1d-4a5b-acae-32a4d9a99a30" ParentID="11677ee3-6ec6-4fc1-99a6-cfb082cdc0e5" />
+                    <row Position="8" Title="Process Case Survey Responses" Url="~/Pages/MK/MK502000.aspx" Expanded="0" IsFolder="0" ScreenID="MK502000" NodeID="f43d7be8-1b1d-4a5b-acae-32a4d9a99a30" ParentID="11677ee3-6ec6-4fc1-99a6-cfb082cdc0e5" />
                 </SiteMap>
             </data>
         </data-set>
