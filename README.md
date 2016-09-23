@@ -65,6 +65,6 @@ None at the moment
 
 ## Copyright and License
 
-Copyright � `2016` `Acumatica`
+Copyright © `2016` `Acumatica`
 
 This component is licensed under the MIT License, a copy of which is available online at https://github.com/Acumatica/acumatica-surveymonkey/blob/master/LICENSE.md
