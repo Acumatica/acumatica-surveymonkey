@@ -6,6 +6,9 @@ namespace PX.SurveyMonkeyReader.Extensions
 {
     public class RestClientExt : RestClient
     {
+        // Note:  MaxCallsPerSecond is based on the SurveyMonkey plan you have.
+        // Basic select plan allows 4 calls per second.  You can increase this if you have a better plan.
+        // See https://developer.surveymonkey.com/docs/overview/limits-and-quotas/
         public const int MaxCallsPerSecond = 4;
 
         private const int MsPerSecond = 1000;
