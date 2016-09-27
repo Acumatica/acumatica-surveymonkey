@@ -57,6 +57,7 @@ If you want the internal comments field & survey reporting eligible checkbox to 
 ![](/READMEAssets/app_credentials.PNG)
 4. To set the Survey ID, use SurveyMonkey's /surveys endpoint (see https://developer.surveymonkey.com/api/v3/#surveys)
 5. Save the changes to the page, and then click "GET ACCESS TOKEN" 
+
 *Note: If you get an "authorization request failed" error, re-check the values you just set and make sure your OAuth Redirect Url is correct.*
 
 Known Issues
