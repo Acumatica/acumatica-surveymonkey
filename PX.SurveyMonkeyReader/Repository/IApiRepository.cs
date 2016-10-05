@@ -10,6 +10,6 @@ namespace PX.SurveyMonkeyReader.Repository
         SurveyQuestion GetSingleSurveyQuestion(string surveyId, long questionId);
         List<SurveyQuestion> GetSurveyQuestions(string surveyId);
         List<SurveyAnswer> GetSurveyAnswers(string surveyId);
-        List<SurveyResponse> GetSurveyResponsesByIdAndDateRange(string surveyId, DateTime? startDate, DateTime? endDate, int? page);
+        List<SurveyResponse> GetSurveyResponsesByIdAndDateRange(string surveyId, DateTime? startDate, DateTime? endDate, int page, out bool isLastPage);
     }
 }

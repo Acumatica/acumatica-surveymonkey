@@ -7,7 +7,7 @@ namespace PX.SurveyMonkeyReader
 {
     public class SurveyMonkeyReader
     {
-        private const int ResultsPerPage = 1000;
+        private const int ResultsPerPage = 100;
         
         private readonly string _surveyId;
         private readonly ApiRepository _repository;
@@ -28,16 +28,14 @@ namespace PX.SurveyMonkeyReader
             var surveyLastModified = _repository.GetSurveyLastModifiedDateTime(_surveyId);
 
             var surveyResponses = new List<SurveyResponse>();
-            int? page = null;
-            int responseCount;
+            int page = 1;
+            bool isLastPage = false;
             do
             {
-                var newSurveyResponses = _repository.GetSurveyResponsesByIdAndDateRange(_surveyId, startDate, endDate, page);
+                var newSurveyResponses = _repository.GetSurveyResponsesByIdAndDateRange(_surveyId, startDate, endDate, page, out isLastPage);
 
-                responseCount = 0;
                 foreach (var response in newSurveyResponses)
                 {
-                    responseCount++;
                     foreach (var question in response.Questions)
                     {
                         question.SurveyLastModified = surveyLastModified.GetValueOrDefault();
@@ -46,9 +44,9 @@ namespace PX.SurveyMonkeyReader
 
                 surveyResponses.AddRange(newSurveyResponses);
 
-                page = (page == null ? 1 : page + 1);
+                page += 1;
 
-            } while (responseCount == ResultsPerPage);
+            } while (!isLastPage);
 
             return surveyResponses;
         }

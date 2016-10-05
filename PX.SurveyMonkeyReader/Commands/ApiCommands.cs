@@ -6,6 +6,8 @@ namespace PX.SurveyMonkeyReader.Commands
 {
     public class ApiCommands
     {
+        public readonly int ResultsPerPage;
+
         private const string SurveyMonkeyDateTimeFormat = "yyyy-MM-ddTHH:mm:ss";
         private const string SurveyMonkeyApiUrl = "https://api.surveymonkey.net/v3";
 
@@ -13,14 +15,14 @@ namespace PX.SurveyMonkeyReader.Commands
 
         private readonly string _apiKey;
         private readonly string _authorizationHeaderValue;
-        private readonly int _resultsPerPage;
+        
         
         public ApiCommands(string apiKey, string accessToken, int resultsPerPage)
         {
             _restClient = new RestClientExt(SurveyMonkeyApiUrl);
             _apiKey = apiKey;
             _authorizationHeaderValue = string.Concat("bearer ", accessToken);
-            _resultsPerPage = resultsPerPage;
+            ResultsPerPage = resultsPerPage;
         }
 
         public string GetSurveyDetailsById(string surveyId)
@@ -34,7 +36,7 @@ namespace PX.SurveyMonkeyReader.Commands
             return restResponse.Content;
         }
 
-        public string GetSurveyResponsesByIdAndDateRange(string surveyId, DateTime? startDate, DateTime? endDate, int? page)
+        public string GetSurveyResponsesByIdAndDateRange(string surveyId, DateTime? startDate, DateTime? endDate, int page)
         {
             var startDateFormatted = startDate?.ToString(SurveyMonkeyDateTimeFormat);
             var endDateFormatted = endDate?.ToString(SurveyMonkeyDateTimeFormat);
@@ -44,11 +46,11 @@ namespace PX.SurveyMonkeyReader.Commands
 
             restRequest.AddParameter("api_key", _apiKey);
             restRequest.AddParameter("status", "completed");
-            restRequest.AddParameter("per_page", _resultsPerPage);
+            restRequest.AddParameter("per_page", ResultsPerPage);
+            restRequest.AddParameter("page", page);
             restRequest.AddParameterIfExists("start_modified_at", startDateFormatted);
             restRequest.AddParameterIfExists("end_modified_at", endDateFormatted);
-            restRequest.AddParameterIfExists("page", page);
-
+            
             restRequest.AddHeader("Authorization", _authorizationHeaderValue);
 
             var restResponse = _restClient.Execute(restRequest);

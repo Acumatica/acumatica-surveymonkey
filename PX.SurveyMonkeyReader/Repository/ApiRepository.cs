@@ -243,7 +243,7 @@ namespace PX.SurveyMonkeyReader.Repository
             return _surveyAnswerListCache;
         }
 
-        public List<SurveyResponse> GetSurveyResponsesByIdAndDateRange(string surveyId, DateTime? startDate, DateTime? endDate, int? page)
+        public List<SurveyResponse> GetSurveyResponsesByIdAndDateRange(string surveyId, DateTime? startDate, DateTime? endDate, int page, out bool isLastPage)
         {
             var surveyResponseList = new List<SurveyResponse>();
             var allSurveyQuestions = GetSurveyQuestions(surveyId);
@@ -252,10 +252,19 @@ namespace PX.SurveyMonkeyReader.Repository
 
             JObject surveyJson;
             if (!JObjectExt.TryParse(surveyJsonString, out surveyJson))
+            {
+                isLastPage = true;
                 return surveyResponseList;
+            }
 
             if (surveyJson.SelectToken("data") == null)
+            {
+                isLastPage = true;
                 return surveyResponseList;
+            }
+
+            var totalResponses = long.Parse(surveyJson.SelectToken("total").ToString());
+            isLastPage = (totalResponses <= _commands.ResultsPerPage * page);
 
             foreach (var dataItem in surveyJson.SelectToken("data").Children())
             {
@@ -378,15 +387,15 @@ namespace PX.SurveyMonkeyReader.Repository
                             });
                         }
                     }
-                    
-                    surveyResponseList.Add(new SurveyResponse
-                    {
-                        CaseCD = surveyResponseCustomValues[3],
-                        ResponseID = long.Parse(dataItem.SelectToken("id").ToString()),
-                        ResponseDate = DateTime.Parse(dataItem.SelectToken("date_modified").ToString()),
-                        Questions = surveyResponseQuestionList
-                    });
                 }
+
+                surveyResponseList.Add(new SurveyResponse
+                {
+                    CaseCD = surveyResponseCustomValues[3],
+                    ResponseID = long.Parse(dataItem.SelectToken("id").ToString()),
+                    ResponseDate = DateTime.Parse(dataItem.SelectToken("date_modified").ToString()),
+                    Questions = surveyResponseQuestionList
+                });
             }
 
             return surveyResponseList;
