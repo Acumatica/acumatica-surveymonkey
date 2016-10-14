@@ -7,6 +7,7 @@ namespace PXSurveyMonkeyCRExt
 {
     public class CRCaseMaintExt : PXGraphExtension<CRCaseMaint>
     { 
+        [PXCopyPasteHiddenView]
         public PXSelectJoin<CRCaseSurveyResponse,
             RightJoin<CRSurveyQuestion, On<CRCaseSurveyResponse.questionID, Equal<CRSurveyQuestion.questionID>>,
                 FullJoin<ParentCRSurveyQuestion, On<CRSurveyQuestion.parentQuestionID, Equal<ParentCRSurveyQuestion.questionID>>,
