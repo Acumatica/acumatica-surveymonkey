@@ -9,9 +9,9 @@ namespace PX.SurveyMonkeyReader.Repository
     {
         private static OAuthCommands _commands;
 
-        public OAuthRepository(string apiKey, string clientId, string clientSecret, string redirectUri)
+        public OAuthRepository(string clientId, string clientSecret, string redirectUri)
         {
-            _commands = new OAuthCommands(apiKey, clientId, clientSecret, redirectUri);
+            _commands = new OAuthCommands(clientId, clientSecret, redirectUri);
         }
 
         public string GetAuthorizationPageUri()

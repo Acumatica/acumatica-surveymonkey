@@ -34,12 +34,6 @@ namespace PXSurveyMonkeyCRExt.DAC
         [PXUIField(DisplayName = "Client Secret")]
         public virtual string UsrSurveyClientSecret { get; set; }
         #endregion
-        #region UsrAPIKey
-        public abstract class usrAPIKey : IBqlField { }
-        [PXDBString(100)]
-        [PXUIField(DisplayName = "API Key")]
-        public virtual string UsrAPIKey { get; set; }
-        #endregion
         #region UsrAccessToken
         public abstract class usrAccessToken : IBqlField { }
         [PXDBString(300)]

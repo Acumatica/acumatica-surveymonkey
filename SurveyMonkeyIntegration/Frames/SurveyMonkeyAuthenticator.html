@@ -8,12 +8,20 @@
             if (ds != null) ds.executeCallback("CompleteAuthentication", str);
             window.close();
         }
-        function redirectToSurveyMonkey(url) {
-            window.location = url;
+        function get(value, name) {
+            var result, tmp = [];
+            var items = value.split("&");
+            for (var index = 0; index < items.length; index++) {
+                tmp = items[index].split("=");
+                if (tmp[0] === name) result = decodeURIComponent(tmp[1]);
+            }
+            return result;
         }
 
-        if (window.location.hash && window.location.hash.length > 0) {
-            redirectToSurveyMonkey(window.location.hash.substring(1).split('#')[0]);
+        var authUrl = get(location.search.substr(1), 'authUrl');
+        if(authUrl)
+        {
+            window.location = authUrl;
         }
         else if (window.location.search) {
             refreshSurveyMonkeyCode(window.location.search);

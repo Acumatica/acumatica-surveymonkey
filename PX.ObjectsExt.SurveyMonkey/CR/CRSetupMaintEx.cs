@@ -23,10 +23,14 @@ namespace PXSurveyMonkeyCRExt
         {
             Base.Actions.PressSave();
 
-            var surveyMonkeyAuthenticatorRequestUrl = string.Format("{0}#{1}#", GetSiteBaseUrl(),
-                HttpUtility.UrlEncode(SurveyMonkeyUrl));
+            var surveyMonkeyOAuthHandler = GetSurveyMonkeyOAuthHandler();
+            string authUrl = surveyMonkeyOAuthHandler.GetAuthorizationPageUri() +
+                "&state=" + Convert.ToBase64String(Encoding.UTF8.GetBytes("acumaticaUrl=" + GetSiteBaseUrl()));
 
-            throw new PXRedirectToUrlException(surveyMonkeyAuthenticatorRequestUrl, PXBaseRedirectException.WindowMode.NewWindow, "Get Access Token");
+            string redirectUrl = GetSiteBaseUrl() +
+                "?authUrl=" + Uri.EscapeDataString(authUrl);
+
+            throw new PXRedirectToUrlException(redirectUrl, PXBaseRedirectException.WindowMode.NewWindow, "Get Access Token");
         }
 
         public PXAction<CRSetup> completeAuthentication;
@@ -63,17 +67,6 @@ namespace PXSurveyMonkeyCRExt
 
         #region Connection Helpers
 
-        public string SurveyMonkeyUrl
-        {
-            get
-            {
-                var surveyMonkeyOAuthHandler = GetSurveyMonkeyOAuthHandler();
-                var state = string.Format("acumaticaUrl={0}", GetSiteBaseUrl());
-                return string.Format("{0}&state={1}",surveyMonkeyOAuthHandler.GetAuthorizationPageUri(), 
-                    Convert.ToBase64String(Encoding.UTF8.GetBytes(state)));
-            }
-        }
-
         public class SurveyMonkeyCode
         {
             public string Code { get; }
@@ -100,7 +93,7 @@ namespace PXSurveyMonkeyCRExt
             var setupRecordExt = graph.SetupRecord.Cache.GetExtension<CRSetupExt>(setupRecord);
             var redirectUrl = GetSiteBaseUrl();
 
-            return new SurveyMonkeyOAuthHandler(setupRecordExt.UsrAPIKey, setupRecordExt.UsrSurveyClientID, setupRecordExt.UsrSurveyClientSecret,
+            return new SurveyMonkeyOAuthHandler(setupRecordExt.UsrSurveyClientID, setupRecordExt.UsrSurveyClientSecret,
                 redirectUrl);
         }
 

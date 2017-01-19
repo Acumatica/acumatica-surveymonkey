@@ -6,9 +6,9 @@ namespace PX.SurveyMonkeyReader
     {
         private readonly OAuthRepository _repository;
 
-        public SurveyMonkeyOAuthHandler(string apiKey, string clientId, string clientSecret, string redirectUri)
+        public SurveyMonkeyOAuthHandler(string clientId, string clientSecret, string redirectUri)
         {
-            _repository = new OAuthRepository(apiKey, clientId, clientSecret, redirectUri);
+            _repository = new OAuthRepository(clientId, clientSecret, redirectUri);
         }
 
         public string GetAuthorizationPageUri()

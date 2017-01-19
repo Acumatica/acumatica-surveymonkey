@@ -53,7 +53,7 @@ If you want the internal comments field & survey reporting eligible checkbox to 
 ### Configuration
 1. Go to Organization/Cash Management/Configuration/Customer Management Preferences and click the new "Case Preferences" tab
 2. Set the Notification Template to the one you created
-3. Set the Client ID, Client Secret, and API Key from the "Credentials" section of your SurveyMonkey app's settings page as shown:
+3. Set the Client ID, and the Client Secret from the "Credentials" section of your SurveyMonkey app's settings page as shown:
 ![](/READMEAssets/app_credentials.PNG)
 4. To set the Survey ID, use SurveyMonkey's /surveys endpoint (see https://developer.surveymonkey.com/api/v3/#surveys)
 5. Save the changes to the page, and then click "GET ACCESS TOKEN" 

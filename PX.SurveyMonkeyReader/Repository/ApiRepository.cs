@@ -16,9 +16,9 @@ namespace PX.SurveyMonkeyReader.Repository
 
         private static ApiCommands _commands;
 
-        public ApiRepository(string apiKey, string accessToken, int resultsPerPage)
+        public ApiRepository(string accessToken, int resultsPerPage)
         {
-            _commands = new ApiCommands(apiKey, accessToken, resultsPerPage);
+            _commands = new ApiCommands(accessToken, resultsPerPage);
         }
 
         public DateTime? GetSurveyLastModifiedDateTime(string surveyId)
