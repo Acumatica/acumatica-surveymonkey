@@ -39,7 +39,7 @@ Quick Start
 1. Go to the Notification Templates screen (Configuration/Email/Notification Templates)
 2. Create the template.  For example, it might look like this:
 ![Notification Template Example](/READMEAssets/notificaton_template_example.PNG)
-3. You will need to add custom parameters (?c=) to the survey monkey URL in your notification templates. You can find an example below:
+3. You will need to add custom parameters (?c=) to the survey monkey URL in your notification templates. The Case CD field must ALWAYS be the 4th paramater. You can find an example below:
 https://www.surveymonkey.com/r/XXXXXX?c=((Records.ContactLastName))||((Records.EMail))||((Records.FullName))||((Records.CaseCD))||((Records.TechUserName))||((Records.PartnerGroup))||((Records.CaseClassID))
 
 ##### (Optional) Step 4: Keep important fields editable after case closure
