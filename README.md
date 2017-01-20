@@ -39,6 +39,8 @@ Quick Start
 1. Go to the Notification Templates screen (Configuration/Email/Notification Templates)
 2. Create the template.  For example, it might look like this:
 ![Notification Template Example](/READMEAssets/notificaton_template_example.PNG)
+3. You will need to add custom parameters (?c=) to the survey monkey URL in your notification templates. You can find an example below:
+https://www.surveymonkey.com/r/XXXXXX?c=((Records.ContactLastName))||((Records.EMail))||((Records.FullName))||((Records.CaseCD))||((Records.TechUserName))||((Records.PartnerGroup))||((Records.CaseClassID))
 
 ##### (Optional) Step 4: Keep important fields editable after case closure
 If you want the internal comments field & survey reporting eligible checkbox to stay editable after you close a case, do the following:
@@ -59,6 +61,24 @@ If you want the internal comments field & survey reporting eligible checkbox to 
 5. Save the changes to the page, and then click "GET ACCESS TOKEN" 
 
 *Note: If you get an "authorization request failed" error, re-check the values you just set and make sure your OAuth Redirect Url is correct.*
+
+#### Usage
+
+To use this feature:
+
+1. Once a case has been closed and the case has an owner, you will be able to use the "Send Case Surveys" screen.
+
+![SendCaseSurveys](READMEAssets/SendCaseSurveys.png)
+
+2. Once a notification has been sent, you will need to process the survey response using the "Process Case Survey Response" screen. 
+
+![ProcessResponse](READMEAssets/processresponse.png)
+
+3. You can now edit the survey response under the Survey tab on the Case screen.
+
+![EditSurvey](READMEAssets/editsurvey.png)
+
+
 
 Known Issues
 ------------
