@@ -17,10 +17,9 @@ namespace PX.SurveyMonkeyReader.Commands
         private readonly string _authorizationHeaderValue;
         
         
-        public ApiCommands(string apiKey, string accessToken, int resultsPerPage)
+        public ApiCommands(string accessToken, int resultsPerPage)
         {
             _restClient = new RestClientExt(SurveyMonkeyApiUrl);
-            _apiKey = apiKey;
             _authorizationHeaderValue = string.Concat("bearer ", accessToken);
             ResultsPerPage = resultsPerPage;
         }

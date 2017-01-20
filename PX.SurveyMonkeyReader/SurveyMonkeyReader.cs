@@ -12,10 +12,10 @@ namespace PX.SurveyMonkeyReader
         private readonly string _surveyId;
         private readonly ApiRepository _repository;
 
-        public SurveyMonkeyReader(string surveyId, string apiKey, string accessToken)
+        public SurveyMonkeyReader(string surveyId, string accessToken)
         {
             _surveyId = surveyId;
-            _repository = new ApiRepository(apiKey, accessToken, ResultsPerPage);
+            _repository = new ApiRepository(accessToken, ResultsPerPage);
         }
 
         public SurveyQuestion GetSurveyQuestion(long questionId)

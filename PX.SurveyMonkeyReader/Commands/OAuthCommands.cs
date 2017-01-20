@@ -11,14 +11,12 @@ namespace PX.SurveyMonkeyReader.Commands
         private const string GrantTypeAuthorizationCode = "authorization_code";
         private const string SurveyMonkeyOAuthUrl = "https://api.surveymonkey.net/oauth";
 
-        private readonly string _apiKey;
         private readonly string _clientId;
         private readonly string _clientSecret;
         private readonly string _redirectUri;
 
-        public OAuthCommands(string apiKey, string clientId, string clientSecret, string redirectUri)
+        public OAuthCommands(string clientId, string clientSecret, string redirectUri)
         {
-            _apiKey = apiKey;
             _clientId = clientId;
             _clientSecret = clientSecret;
             _redirectUri = redirectUri;
@@ -30,7 +28,6 @@ namespace PX.SurveyMonkeyReader.Commands
             {
                 {"client_id", _clientId},
                 {"response_type", ResponseTypeCode},
-                {"api_key", _apiKey},
                 {"redirect_uri", _redirectUri}
             };
 
@@ -41,8 +38,7 @@ namespace PX.SurveyMonkeyReader.Commands
         // so this function uses the WebRequest/WebResponse/StreamReader method.
         public string GetAccessToken(string code)
         {
-            var queryStringData = new NameValueCollectionExt {{"api_key", _apiKey}};
-            var fullRequestUrl = string.Concat(SurveyMonkeyOAuthUrl, "/token?", queryStringData.ToQueryString());
+            var fullRequestUrl = string.Concat(SurveyMonkeyOAuthUrl, "/token");
 
             var bodyData = new NameValueCollectionExt
             {

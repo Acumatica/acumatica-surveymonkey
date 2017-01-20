@@ -39,6 +39,8 @@ Quick Start
 1. Go to the Notification Templates screen (Configuration/Email/Notification Templates)
 2. Create the template.  For example, it might look like this:
 ![Notification Template Example](/READMEAssets/notificaton_template_example.PNG)
+3. You will need to add custom parameters (?c=) to the survey monkey URL in your notification templates. The Case CD field must ALWAYS be the 4th paramater. You can find an example below:
+https://www.surveymonkey.com/r/XXXXXX?c=((Records.ContactLastName))||((Records.EMail))||((Records.FullName))||((Records.CaseCD))||((Records.TechUserName))||((Records.PartnerGroup))||((Records.CaseClassID))
 
 ##### (Optional) Step 4: Keep important fields editable after case closure
 If you want the internal comments field & survey reporting eligible checkbox to stay editable after you close a case, do the following:
@@ -53,12 +55,30 @@ If you want the internal comments field & survey reporting eligible checkbox to 
 ### Configuration
 1. Go to Organization/Cash Management/Configuration/Customer Management Preferences and click the new "Case Preferences" tab
 2. Set the Notification Template to the one you created
-3. Set the Client ID, Client Secret, and API Key from the "Credentials" section of your SurveyMonkey app's settings page as shown:
+3. Set the Client ID, and the Client Secret from the "Credentials" section of your SurveyMonkey app's settings page as shown:
 ![](/READMEAssets/app_credentials.PNG)
 4. To set the Survey ID, use SurveyMonkey's /surveys endpoint (see https://developer.surveymonkey.com/api/v3/#surveys)
 5. Save the changes to the page, and then click "GET ACCESS TOKEN" 
 
 *Note: If you get an "authorization request failed" error, re-check the values you just set and make sure your OAuth Redirect Url is correct.*
+
+#### Usage
+
+To use this feature:
+
+1. Once a case has been closed and the case has an owner, you will be able to use the "Send Case Surveys" screen.
+
+![SendCaseSurveys](READMEAssets/SendCaseSurveys.png)
+
+2. Once a notification has been sent, you will need to process the survey response using the "Process Case Survey Response" screen. 
+
+![ProcessResponse](READMEAssets/processresponse.png)
+
+3. You can now edit the survey response under the Survey tab on the Case screen.
+
+![EditSurvey](READMEAssets/editsurvey.png)
+
+
 
 Known Issues
 ------------

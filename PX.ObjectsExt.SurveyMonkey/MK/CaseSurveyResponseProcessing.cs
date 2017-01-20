@@ -10,7 +10,7 @@ namespace PXSurveyMonkeyMKExt
     public class CaseSurveyResponseProcessing : PXGraph<CaseSurveyResponseProcessing>
     {
         [Serializable]
-        [PXProjection(typeof(Select<CRSetup, Where<CRSetupExt.usrAPIKey, IsNotNull>>))]
+        [PXProjection(typeof(Select<CRSetup>))]
         public class CRCaseSurveySetup : IBqlTable, IPXSelectable
         {
             #region Selected
@@ -52,7 +52,7 @@ namespace PXSurveyMonkeyMKExt
             var fromDate = setupRecordExt.UsrLastSurveySyncDate;
             var toDate = DateTime.UtcNow;
 
-            var dataReader = new PX.SurveyMonkeyReader.SurveyMonkeyReader(setupRecordExt.UsrSurveyID, setupRecordExt.UsrAPIKey,
+            var dataReader = new PX.SurveyMonkeyReader.SurveyMonkeyReader(setupRecordExt.UsrSurveyID,
                 setupRecordExt.UsrAccessToken);
 
             List<SurveyResponse> surveyResponses;
