@@ -67,18 +67,11 @@ If you want the internal comments field & survey reporting eligible checkbox to 
 To use this feature:
 
 1. Once a case has been closed and the case has an owner, you will be able to use the "Send Case Surveys" screen.
-
-![SendCaseSurveys](READMEAssets/SendCaseSurveys.png)
-
+![SendCaseSurveys](/READMEAssets/SendCaseSurveys.PNG)
 2. Once a notification has been sent, you will need to process the survey response using the "Process Case Survey Response" screen. 
-
-![ProcessResponse](READMEAssets/processresponse.png)
-
+![ProcessResponse](/READMEAssets/surveyresponse.PNG)
 3. You can now edit the survey response under the Survey tab on the Case screen.
-
-![EditSurvey](READMEAssets/editsurvey.png)
-
-
+![EditSurvey](/READMEAssets/editsurvey.PNG)
 
 Known Issues
 ------------
