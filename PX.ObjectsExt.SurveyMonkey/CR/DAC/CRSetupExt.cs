@@ -7,21 +7,6 @@ namespace PXSurveyMonkeyCRExt.DAC
 {
     public class CRSetupExt : PXCacheExtension<CRSetup>
     {
-        #region UsrNotificationMapID
-        public abstract class usrNotificationMapID : IBqlField { }
-        [PXDBInt()]
-        [PXUIField(DisplayName = "Notification Template")]
-        [PXSelector(typeof(Search<Notification.notificationID>),
-            SubstituteKey = typeof(Notification.name),
-            DescriptionField = typeof(Notification.name))]
-        public virtual int? UsrNotificationMapID { get; set; }
-        #endregion
-        #region UsrSurveyID
-        public abstract class usrSurveyID : IBqlField { }
-        [PXDBString(20)]
-        [PXUIField(DisplayName = "Survey ID")]
-        public virtual string UsrSurveyID { get; set; }
-        #endregion
         #region UsrSurveyClientID
         public abstract class usrSurveyClientID : IBqlField { }
         [PXDBString(100)]
@@ -39,12 +24,6 @@ namespace PXSurveyMonkeyCRExt.DAC
         [PXDBString(300)]
         [PXUIField(DisplayName = "Access Token")]
         public virtual string UsrAccessToken { get; set; }
-        #endregion
-        #region UsrLastSurveySyncDate
-        public abstract class usrLastSurveySyncDate : IBqlField { }
-        [PXDBDateAndTime(UseTimeZone=false, PreserveTime=true)]
-        [PXUIField(DisplayName = "Last Survey Sync Date")]
-        public virtual DateTime? UsrLastSurveySyncDate { get; set; }
         #endregion
     }
 }

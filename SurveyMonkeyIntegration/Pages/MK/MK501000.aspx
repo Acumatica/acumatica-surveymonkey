@@ -80,6 +80,8 @@
         </px:PXTextEdit>
         <px:PXTextEdit ID="edPartnerGroup" runat="server" DataField="PartnerGroup">
         </px:PXTextEdit>
+        <px:PXTextEdit ID="edSurveyUrl" runat="server" AlreadyLocalized="False" DataField="SurveyUrl">
+        </px:PXTextEdit>
     </RowTemplate>
     <Columns>
         <px:PXGridColumn DataField="Selected" TextAlign="Center" Type="CheckBox" 
@@ -125,9 +127,11 @@
         </px:PXGridColumn>
         <px:PXGridColumn DataField="TechLastName">
         </px:PXGridColumn>
-        <px:PXGridColumn DataField="PartnerGroup">
+        <px:PXGridColumn DataField="PartnerGroup" Width="100px">
         </px:PXGridColumn>
-        <px:PXGridColumn DataField="CaseClassID">
+        <px:PXGridColumn DataField="CaseClassID" Width="100px">
+        </px:PXGridColumn>
+        <px:PXGridColumn DataField="SurveyUrl" Width="150px">
         </px:PXGridColumn>
     </Columns>
             </px:PXGridLevel>

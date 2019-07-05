@@ -13,7 +13,9 @@ namespace PXSurveyMonkeyMKExt
         public PXSelect<CRSetup> SetupRecord;
 
         public PXSelect<CRCase> Cases;
-        
+
+        public PXSelect<CRCaseClass> CaseClassRecord;
+
         public PXSelect<CRSurveyQuestion> SurveyQuestions;
         public PXSelect<CRSurveyQuestion,
                     Where<CRSurveyQuestion.questionID,

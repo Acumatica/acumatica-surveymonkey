@@ -11,7 +11,9 @@
 		<Levels>
 			<px:PXGridLevel DataMember="SurveyList">
                 <Columns>
-                    <px:PXGridColumn AllowNull="False" DataField="Selected" TextAlign="Center" Type="CheckBox" Width="30px" >
+                    <px:PXGridColumn AllowNull="False" DataField="Selected" TextAlign="Center" Type="CheckBox" Width="40px" AllowCheckAll="true" >
+                    </px:PXGridColumn>
+                    <px:PXGridColumn DataField="CaseClassID" Width="300px" DisplayMode="Hint">
                     </px:PXGridColumn>
                     <px:PXGridColumn DataField="UsrSurveyID">
                     </px:PXGridColumn>

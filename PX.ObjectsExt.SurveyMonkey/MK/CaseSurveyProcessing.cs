@@ -31,44 +31,44 @@ namespace PXSurveyMonkeyMKExt
         public static void ProcessSurvey(List<SurveyContactInfo> contacts)
         {
             bool erroroccurred = false;
-            
-            ContactMaint graphNotification = PXGraph.CreateInstance<ContactMaint>();
-            Notification rowNotification = PXSelectJoin<Notification,
-                InnerJoin<CRSetup, On<Notification.notificationID, Equal<CRSetupExt.usrNotificationMapID>>>>.Select(graphNotification);
 
-            if (rowNotification == null)
-            {
-                throw new PXException("Notification Template for Case Survey is not specified.");
-            }            
+            ContactMaint graphNotification = PXGraph.CreateInstance<ContactMaint>();
 
             List<SurveyContactInfo> contactsToProceed = new List<SurveyContactInfo>(contacts);
-            
+
             CaseSurveyHistoryMaint graph = PXGraph.CreateInstance<CaseSurveyHistoryMaint>();
-
-            //Get From Address from Notification Template if not specified then use default
-            string sFromEmail = PX.Data.EP.MailAccountManager.GetDefaultEmailAccount().Address;
-            if (rowNotification.NFrom.HasValue)
-            {
-                PX.SM.EMailAccount EMA = PXSelect<PX.SM.EMailAccount,
-                    Where<PX.SM.EMailAccount.emailAccountID, Equal<Required<PX.SM.EMailAccount.emailAccountID>>>>.Select(graphNotification, rowNotification.NFrom);
-                if (EMA != null)
-                {
-                    sFromEmail = EMA.Address;
-                }
-            }
-
-            if (String.IsNullOrEmpty(sFromEmail))
-            {
-                throw new PXException("E-mail account is not setup to send Surveys.");
-            }
 
             foreach (var rec in contactsToProceed)
             {
                 try
                 {
+                    //Notification rowNotification = PXSelect<Notification, Where<Notification.notificationID, Equal<Required<Notification.notificationID>>>>.Select(graphNotification, rec.NotificationMapID);
+
+                    //if (rowNotification == null)
+                    //{
+                    //    throw new PXException("Notification Template for Case Survey is not specified.");
+                    //}
+
+                    //Get From Address from Notification Template if not specified then use default
+                    string sFromEmail = PX.Data.EP.MailAccountManager.GetDefaultEmailAccount().Address;
+                    if (rec.NotificationNFrom.HasValue)
+                    {
+                        PX.SM.EMailAccount EMA = PXSelect<PX.SM.EMailAccount,
+                            Where<PX.SM.EMailAccount.emailAccountID, Equal<Required<PX.SM.EMailAccount.emailAccountID>>>>.Select(graphNotification, rec.NotificationNFrom);
+                        if (EMA != null)
+                        {
+                            sFromEmail = EMA.Address;
+                        }
+                    }
+
+                    if (String.IsNullOrEmpty(sFromEmail))
+                    {
+                        throw new PXException("E-mail account is not setup to send Surveys.");
+                    }
+
                     if (!String.IsNullOrEmpty(rec.EMail))
                     {
-                        AddEmailActivity(rec, rowNotification);
+                        AddEmailActivity(rec);
 
                         //Update Case Survey History
                         CaseSurveyHistory newCaseHistory = new CaseSurveyHistory();
@@ -98,14 +98,14 @@ namespace PXSurveyMonkeyMKExt
                 throw new PXException("At least one Survey hasn't been processed.");
         }
 
-        private static void AddEmailActivity(SurveyContactInfo CurrentCase, Notification rowNotiication)
+        private static void AddEmailActivity(SurveyContactInfo CurrentCase)
         {
             bool sent = false;
             string sError = "Failed to send E-mail.";
             try
             {
-                var sender = TemplateNotificationGenerator.Create(CurrentCase, rowNotiication.NotificationID.Value);
-                sender.MailAccountId = (rowNotiication.NFrom.HasValue) ? rowNotiication.NFrom.Value :
+                var sender = TemplateNotificationGenerator.Create(CurrentCase, CurrentCase.NotificationMapID.Value);
+                sender.MailAccountId = (CurrentCase.NotificationNFrom.HasValue) ? CurrentCase.NotificationNFrom.Value :
                                                          PX.Data.EP.MailAccountManager.DefaultMailAccountID;
                 sender.To = CurrentCase.EMail;
                 sent |= sender.Send().Any();

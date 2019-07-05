@@ -2,23 +2,27 @@
 using PX.Data;
 using PX.Objects.CR;
 using PX.Objects.CS;
+using PX.SM;
 
 namespace PXSurveyMonkeyMKExt.DAC
 {
     [Serializable]
 	[PXPrimaryGraph(typeof(CaseSurveyProcessing))]
-	[PXProjection(typeof(Select5<Contact,
-			 InnerJoin<CRCase, On<CRCase.contactID, Equal<Contact.contactID>>,
-			 LeftJoin<BAccount, On<BAccount.bAccountID, Equal<CRCase.customerID>>,
-			 LeftJoin<CSAnswers, On<CSAnswers.refNoteID, Equal<BAccount.noteID>,
-									 And<CSAnswers.attributeID, Equal<AttribNamesCustom.PartnerGroupAttrbName>>>,
-			 LeftJoin<PX.SM.Users, On<PX.SM.Users.pKID, Equal<CRCase.ownerID>>,
-			 LeftJoin<CaseSurveyHistory, On<CaseSurveyHistory.contactID, Equal<Contact.contactID>,
-										And<CaseSurveyHistory.ownerID, Equal<CRCase.ownerID>>>>>>>>,
-				Where<CRCase.ownerID, IsNotNull,
-					And<CRCase.majorStatus, Equal<CRCaseMajorStatusesAttribute.closed>>>,
-					Aggregate<GroupBy<Contact.contactID, GroupBy<CRCase.ownerID, Count<CRCase.caseID>>>>>), Persistent = false)]
-	public class SurveyContactInfo : IBqlTable
+    [PXProjection(typeof(Select5<Contact,
+            InnerJoin<CRCase, On<CRCase.contactID, Equal<Contact.contactID>>,
+            InnerJoin<CRCaseClass, On<CRCaseClass.caseClassID, Equal<CRCase.caseClassID>,
+                                    And<CRCaseClassExt.usrNotificationMapID, IsNotNull, And<CRCaseClassExt.usrSurveyURL, IsNotNull>>>,
+            InnerJoin<Notification, On<Notification.notificationID, Equal<CRCaseClassExt.usrNotificationMapID>>,
+            LeftJoin<BAccount, On<BAccount.bAccountID, Equal<CRCase.customerID>>,
+            LeftJoin<CSAnswers, On<CSAnswers.refNoteID, Equal<BAccount.noteID>,
+                                     And<CSAnswers.attributeID, Equal<AttribNamesCustom.PartnerGroupAttrbName>>>,
+            LeftJoin<PX.SM.Users, On<PX.SM.Users.pKID, Equal<CRCase.ownerID>>,
+            LeftJoin<CaseSurveyHistory, On<CaseSurveyHistory.contactID, Equal<Contact.contactID>,
+                                        And<CaseSurveyHistory.ownerID, Equal<CRCase.ownerID>>>>>>>>>>,
+            Where<CRCase.ownerID, IsNotNull,
+                And<CRCase.majorStatus, Equal<CRCaseMajorStatusesAttribute.closed>>>,
+                Aggregate<GroupBy<Contact.contactID, GroupBy<CRCase.caseClassID, GroupBy<CRCase.ownerID, Count<CRCase.caseID>>>>>>), Persistent = false)]
+    public class SurveyContactInfo : IBqlTable
 	{
 		#region Selected
 		public abstract class selected : IBqlField { }
@@ -187,19 +191,37 @@ namespace PXSurveyMonkeyMKExt.DAC
 		#endregion
 		#region CaseClassID
 		public abstract class caseClassID : IBqlField { }
-		[PXDBString(10, IsUnicode = true, BqlField = typeof(CRCase.caseClassID))]
-		[PXUIField(DisplayName = "Case Class")]
-		public virtual String CaseClassID { get; set; }
+		[PXDBString(10, IsKey = true, IsUnicode = true, BqlField = typeof(CRCase.caseClassID))]
+        [PXUIField(DisplayName = "Case Class")]
+        public virtual String CaseClassID { get; set; }
 		#endregion
 		#region PartnerGroup
 		public abstract class partnerGroup : IBqlField { }
 		[PXDBString(IsUnicode = true, BqlField = typeof(CSAnswers.value))]
 		[PXUIField(DisplayName = "Partner Group")]
 		public virtual string PartnerGroup { get; set; }
-		#endregion
-	}
+        #endregion
+        #region SurveyUrl
+        public abstract class surveyUrl : IBqlField { }
+        [PXDBString(IsUnicode = true, BqlField = typeof(CRCaseClassExt.usrSurveyURL))]
+        [PXUIField(DisplayName = "Survey Url")]
+        public virtual string SurveyUrl { get; set; }
+        #endregion
+        #region NotificationMapID
+        public abstract class notificationMapID : IBqlField { }
+        [PXDBInt(BqlField = typeof(CRCaseClassExt.usrNotificationMapID))]
+        [PXUIField(DisplayName = "Notification ID")]
+        public virtual Int32? NotificationMapID { get; set; }
+        #endregion
+        #region NotificationNFrom
+        public abstract class notificationNFrom : IBqlField { }
+        [PXDBInt(BqlField = typeof(Notification.nfrom))]
+        [PXUIField(DisplayName = "Notification From")]
+        public virtual Int32? NotificationNFrom { get; set; }
+        #endregion
+    }
 
-	public static class AttribNamesCustom
+    public static class AttribNamesCustom
 	{
 		public class PartnerGroupAttrbName : Constant<string>
 		{

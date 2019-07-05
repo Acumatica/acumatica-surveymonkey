@@ -13,7 +13,6 @@ namespace PX.SurveyMonkeyReader.Commands
 
         private static RestClientExt _restClient;
 
-        private readonly string _apiKey;
         private readonly string _authorizationHeaderValue;
         
         
@@ -28,7 +27,6 @@ namespace PX.SurveyMonkeyReader.Commands
         {
             var restRequest = new RestRequest("surveys/{id}/details", Method.GET);
             restRequest.AddUrlSegment("id", surveyId);
-            restRequest.AddParameter("api_key", _apiKey);
             restRequest.AddHeader("Authorization", _authorizationHeaderValue);
 
             var restResponse = _restClient.Execute(restRequest);
@@ -43,7 +41,6 @@ namespace PX.SurveyMonkeyReader.Commands
             var restRequest = new RestRequestExt("surveys/{id}/responses/bulk", Method.GET);
             restRequest.AddUrlSegment("id", surveyId);
 
-            restRequest.AddParameter("api_key", _apiKey);
             restRequest.AddParameter("status", "completed");
             restRequest.AddParameter("per_page", ResultsPerPage);
             restRequest.AddParameter("page", page);
