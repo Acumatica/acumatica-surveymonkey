@@ -53,14 +53,14 @@ If you want the internal comments field & survey reporting eligible checkbox to 
 5. Click Save
 
 ### Configuration
-1. Go to Organization/Cash Management/Configuration/Customer Management Preferences and click the new "Case Preferences" tab
+1. Go to Organization/Customer Management/Configuration/Customer Management Preferences (CR101000) and click the new "Case Preferences" tab
 2. Set the Client ID, and the Client Secret from the "Credentials" section of your SurveyMonkey app's settings page as shown:
 ![](/READMEAssets/app_credentials.PNG)
 3. Save the changes to the page, and then click "GET ACCESS TOKEN" 
 
 *Note: If you get an "authorization request failed" error, re-check the values you just set and make sure your OAuth Redirect Url is correct.*
 
-4. Navigate to Organization/Customer Management/Configuration/Case Classes (CR206000) screen and click new Survey tab 
+4. Navigate to Organization/Customer Management/Configuration/Case Classes (CR206000) screen and click the new Survey tab 
 5. Set Survey URL, Survey ID, and the Notification Template to the one you created.
 ![](/READMEAssets/caseclass_surveyInfo.png)
 
